@@ -1,6 +1,6 @@
 # LogImport plugin for Beets
 
-This plugin adds logging of the destination paths of your imported tracks.
+This [beets] plugin adds logging of the destination paths of your imported tracks.
 
 For this add the `logimport` plugin to your config. Then the destination paths of your imported tracks are logged. 
 
@@ -13,3 +13,4 @@ logimport:
     logatlevel: warning
 ```
 
+  [beets]: https://beets.io
