@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "localbeets import album",
+            "type": "shell",
+            "command": "just beetimp '~/Dropbox/music/to_import/beets/Virtuoso Recorder Concertos/'",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+} 
