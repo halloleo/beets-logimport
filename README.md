@@ -2,13 +2,13 @@
 
 This [beets] plugin adds logging of the destination paths when you import tracks.
 
-### Installtion
+### Installation
 
 Install the plugin into beets' Python with
 
     pip install beets-logimport
 
-(or the respective equivialent if you use e.g. pipx).
+(or the respective equivalent if you use e.g. pipx).
 
 ### Usage
 
