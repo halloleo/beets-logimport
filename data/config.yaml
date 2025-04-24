@@ -1,29 +1,8 @@
-directory: ~/Dropbox/devel/audio/beets/plugdev/data/music
-library: ~/Dropbox/devel/audio/beets/plugdev/data/plugdev.db
+directory: music
 
 plugins: 
-    - logimport  # Your custom plugin
-    - fromfilename  # Helps with importing
-    - fetchart  # Gets album art
+    - logimport
     - info  # Shows file info
-    - random
-    - inline
 
 logimport:
-    logatlevel: warning
-
-import:
-    write: yes  # Write metadata to files
-    copy: yes  # Copy files to library
-    move: no   # Don't move files (safer than move)
-    resume: ask  # Ask before resuming interrupted imports
-    log: import.log  # Keep a log of imports
-
-paths:
-    default: $albumartist/$album%aunique{}/$track $title
-    singleton: Non-Album/$artist/$title
-    comp: Compilations/$album%aunique{}/$track $title
-
-ui:
-    color: yes
-    terminal_width: 80
+    atlevel: warning

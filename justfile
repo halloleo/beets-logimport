@@ -8,25 +8,19 @@ list:
 
 
 set export
+set dotenv-load
 
 # Variables
 BEETSDIR := justfile_directory() / "data"
 
-# test
-t1 *args:
-  @showparams.sh "{{args}}"
-
-# Run local (plugdev) beet (Note: Does not work mright with args containing spaces!)
+# Run local (plugin) beet
 localbeet *args:
   @uv pip install -e .
   @uv run beet {{args}}
 
-# Run local (plugdev) beet with import
-beetimp args:
-  @uv pip install -e .
-  @uv run beet imp "{{args}}"
+alias beet := localbeet
 
-# test for the environment
-tenv:
-  @pwd
-  @echo $BEETSDIR
+# Publish plugin to pypi
+publish:
+  @uv build
+  @uv publish

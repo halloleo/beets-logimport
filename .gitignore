@@ -12,3 +12,4 @@ wheels/
 /.python-version
 /data/*
 !/data/config.yaml
+.env
